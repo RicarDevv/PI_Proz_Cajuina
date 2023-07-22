@@ -19,16 +19,7 @@ main{
     margin-top: 100px;
     padding-left: 30px;
 }
-/*
-body {
-    background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-*/
+
 section {
     position: relative;
     width: 100%;
@@ -118,17 +109,7 @@ img {
     width: 200px;
     height: 200px;
 }
-
-/*Video*/
-.video {
-    flex-direction: column;
-    height: 500px;
-    width: 500px;
-    position:sticky;
-}
-/*Fim do vídeo*/
-
-
+*/
 .content {
     position: relative;
     width: 100%;
