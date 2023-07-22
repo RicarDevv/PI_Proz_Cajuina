@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cajuína São Geraldo</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 
-<body>
+<body onload="Inicio()">
     <section class="sec">
         <header>
             <a href="#"><img src="./src/logoVetorizado1.png" class="logo"> </a>
@@ -36,11 +37,6 @@
             <div class="imgBox">
                 <img src="./src/img2.jpg" class="csj">
             </div>
-            <ul class="sci">
-                <li><a href="#"><img src="./src/facebook.png"></a></li>
-                <li><a href="#"><img src="./src/twitter.png"></a></li>
-                <li><a href="#"><img src="./src/instagram.png"></a></li>
-            </ul>
     </section>
     <section>
         <p>
@@ -53,21 +49,54 @@ Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Cevadis im ampola pa 
 Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.Aenean aliquam molestie leo, vitae iaculis nisl.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.
         </p>
     </section>
-    <section>
-        </div class="slider3D">
-            <span style="--i:1;"> <img src="./src/garrafa2Litros.png" alt=""></span>
-            <span style="--i:2;"> <img src="./src/garrafaPequena.png" alt=""></span>
-            <span style="--i:3;"> <img src="./src/garrafaPitchula.png" alt=""></span>
+    <section id="produtos">
+        <div class="texto_prod">
+            <h2></h2>
+            <p></p>
+        </div>
+        <div id="todos_produtos">
+            <div>
+                <img src="" alt="" id="img_prod">
+                <ul>
+                    <li onclick="Prod(1)"><img src="./src/garrafaPitchula.png" alt="Garrafinha"></li>
+                    <li onclick="Prod(2)"><img src="./src/garrafa2Litros.png" alt="Garrafa"></li>
+                    <li onclick="Prod(3)"><img src="./src/lataCSJ.png" alt="Latinha"></li>
+                    <li onclick="Prod(4)"><img src="./src/picole-sao-geraldo-1.png" alt="Picole"></li>
+                    <li onclick="Prod(5)"><img src="./src/garrafaPequena.png" alt="Garrafa de vidro"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="texto_prod">
+            <h2></h2>
+            <p></p>
         </div>
     </section>
+    <section id="flutuantes">
+        <ul id="social">
+            <li><a href="#"><img src="./src/facebook.png" alt="facebook"></a></li><br>
+            <li><a href="#"><img src="./src/twitter.png" alt="Twitter"></a></li><br>
+            <li><a href="#"><img src="./src/instagram.png" alt="Instagram"></a></li>
+        </ul>
+        <!--Botão Subir-->
+        <a href="#"><button id="subir">
+                < </button></a>
+    </section>
+    <section id="rodape">
+        <footer>
+            <!-- final -->
+            <img src="./src/bannerCSJ.png" alt="Logo do rodapé">
+            <div>
+                <a href="#produtos">
+                    <p>Trabalhe Conosco<br>Nos encontre aqui<br>Contate-nos</p>
+                </a>
+                <a href="#">
+                    <p>Lorem ipsummm<br>Lorem ipsummm</p>
+                </a>
+                <a href="#cupons">
+                    <p>Veja nosso proprosito<br>Material que usamos</p>
+                </a>
+            </div>
+        </footer>
+    </section>
 </body>
-<footer>
-    <!-- final -->
-    <div class="linhas" id="linha-horizontal1"></div>
-    <div class="footer_infor">
-      <a href="#"><p>Trabalhe Conosco<br>Nos encontre aqui<br>Contate-nos</p></a>
-      <a href="#"><p>Lorem ipsummm<br>Lorem ipsummm</p></a>
-      <a href="#"><p>Veja nosso proprosito<br>Material que usamos</p></a>
-    <div class="linhas" id="linha-horizontal2"></div>
-</footer>
 </html>
