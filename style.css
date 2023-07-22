@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(247, 250, 249);
+}
+
+nav a:hover{
+    
+    color: #fff;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+main{
+    margin-top: 100px;
+    padding-left: 30px;
+}
+/*
+body {
+    background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+*/
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transition: 0.5s;
+}
+
+.section-nov {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transition: 0.5s;
+    display: block;
+} 
+
+.section-fil {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transition: 0.5s;
+    display: block;
+} 
+/* Menu - A partir daqui é o CSS do menu */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    gap: 2,5rem;
+}
+
+li {
+    display: block;
+    transition: .5s;
+}
+
+ul:hover li {
+    filter: blur(5px);
+}
+
+ul li:hover {
+    filter: blur(0px);
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+/* Aqui acaba o CSS menu */ 
+/*
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/*Video*/
+.video {
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    position:sticky;
+}
+/*Fim do vídeo*/
+
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .textBox h2 span {
+    font-size: 2em;
+}
+
+.content .textBox p {
+    color: #fff;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content .imgBox {
+
+    height: 400px;
+    width: 400px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content:center ;
+}
+
+.content .imgBox img {
+    border-style:outset;
+    border-radius: 60%;
+    max-width: 600px;
+    max-height: 350px;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex ;
+    justify-content:flex-end;
+    align-items:center ;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    section {
+        padding: 20px 50px;
+    }
+
+    .content {
+        padding: 100px 50px 150px;
+    }
+
+    .content .textBox {
+        padding: 1em;
+    }
+}
+
+/* Slide */
+.slider_main {
+    position: absolute;
+    left: 0;
+    top: 12vh;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.slider {
+    position: relative;
+    width: 700px;
+    height: 55vh;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Todos os slides*/
+.slides {
+    top: 10%;
+    width: 40%;
+    height: 90%;
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid #222;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+/*Texto*/
+.slider p{
+    top: 90%;
+    color: black;
+    position: relative;
+    text-align: center;
+}
+
+/*Sliders Imagens*/
+.slides img {
+    position: relative;
+    width: 100%;
+    top: 10%;
+}
+
+/*Sliders individuais*/
+#slide0 {
+    float: left;
+    border-radius: 30px;
+}
+
+#slide1 {
+    float: right;
+}
+
+#slide2 {
+    top: -90%;
+    float: left;
+    margin-left: 30%;
+}
+
+/*Botões para controle de sliders*/
+.bts_direcao {
+    box-sizing: content-box;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 100%;
+    top: 40%;
+    cursor: pointer;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bt_voltar {
+    left: 10px;
+    background-image: url(./src/bt_va.png);
+}
+
+#bt_avancar {
+    right: 10px;
+    background-image: url(./src/bt_va.png);
+    transform: scaleX(-1);
+}
+
+.form {
+    margin-top: 40px;
+}
+
+form {
+	margin: 20px;
+    margin-bottom: 50px;
+
+
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+    color: black;
+}
+
+.contato-zap{
+    display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+    width: 50%;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: orange;
+	transform: scale(1.2);
+}
+
+#corpo {
+    margin-top: 100px;
+}
+
+/*Rodapé*/
+footer {
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    max-height: 300px;
+    left: 0;
+    bottom: 0%;
+    background-color: #030;
+}
+
+/*Rodapé: Linhas*/
+.linhas {
+    left: 10%;
+    width: 80%;
+    position: absolute;
+    border: 2px solid white;
+}
+
+#linha-horizontal1 {
+    top: 10%;
+}
+
+#linha-horizontal2 {
+    bottom: 10%;
+    margin-bottom: 10px;
+}
+
+/*Rodapé: Informações*/
+.footer_infor {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 13%;
+    background-image: url(./src/logo2CSJ.png);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    background-size: contain;
+}
+
+.footer_infor p {
+    transform: translateY(-50%);
+    position: relative;
+    text-align: center;
+    float: right;
+    width: 25%;
+    top: 50%;
+}
