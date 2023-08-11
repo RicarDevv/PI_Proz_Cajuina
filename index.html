@@ -9,22 +9,23 @@
     <script defer src="script.js"></script>
 </head>
 
-<body onload="Inicio()" id="Inicio">
-    <section class="sec">
-        <header>
-            <a href="./index.html"><img src="./src/logoVetorizado1.png" class="logo"> </a>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="novidades.html">Novidades</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="filiase.html">Filie-se</a></li>
-                        <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
-                    </ul> 
-                </nav>
-            </div>
-        </header>
+<body onload="Inicio()" id="Inicio" class="tema-claro">
+    <header>
+        <a href="./index.html"><img src="./src/logoVetorizado1.png" class="logo"> </a>
+        <div>
+            <nav>
+                <ul>
+                    <li class="menu_pc"><a href="index.html">Home</a></li>
+                    <li class="menu_pc"><a href="novidades.html">Novidades</a></li>
+                    <li class="menu_pc"><a href="login.html">Login</a></li>
+                    <li class="menu_pc"><a href="filiase.html">Filie-se</a></li>
+                    <li class="menu_pc"><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
+                    <li id="menu_mobile"><img src="./src/menu.png" alt="Menu mobile"></li>
+                </ul> 
+            </nav>
+        </div>
+    </header>
+    <section>     
         <div class="content">
             <div class="textBox">
                 <h2>só porque é <br><span>Deliciosa!!</span></h2>
@@ -73,13 +74,14 @@
     </p>
     </section>
     <section id="flutuantes">
+        <img src="./src/Sol.png" id="tema" alt="Tema" title="Tema">
         <ul id="social">
-            <li><a href="https://www.facebook.com/"><img src="./src/facebook.png" alt="facebook"></a></li><br>
-            <li><a href="https://twitter.com/"><img src="./src/twitter.png" alt="Twitter"></a></li><br>
-            <li><a href="https://www.instagram.com/ "><img src="./src/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.facebook.com/" title="Facebook"><img src="./src/facebook.png" alt="facebook"></a></li><br>
+            <li><a href="https://twitter.com/" title="Twitter"><img src="./src/twitter.png" alt="Twitter"></a></li><br>
+            <li><a href="https://www.instagram.com/ " title="Instagram"><img src="./src/instagram.png" alt="Instagram"></a></li>
         </ul>
         <!--Botão Subir-->
-        <a href="#" id="subir">
+        <a href="#" id="subir" title="Subir">
             <  </a> 
     </section>
     <section id="rodape">

@@ -1,3 +1,6 @@
+'use strict'
+//O modo estrito torna mais fácil escrever JavaScript "seguro". LINK: https://www.w3schools.com/js/js_strict.asp
+
 //Array de Produtos, que pode ser substituido por um 'Bando de dados' futuramente
 const prods=[
     {
@@ -61,3 +64,16 @@ const prods=[
     imgs[i].addEventListener("mouseover",function(){imgs[i].style.transform="scale(1.4)";});
     imgs[i].addEventListener("mouseout",function(){imgs[i].style.transform="scale(1.0)";});
     }
+        
+    
+const switcher = document.querySelector("#tema");
+switcher.addEventListener("click", function() {
+    console.log("0");
+document.body.classList.toggle("tema-escuro");
+var className = document.body.className; 
+if(className=="tema-claro"){
+this.src = './src/Sol.png';}else{
+this.src = './src/Lua.png';}
+});
+//<body class="light-theme">
+//   <div><button class="btn">Dark</button></div>

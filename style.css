@@ -11,7 +11,8 @@
     /*Mesmo que o de cima*/
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: rgb(247, 250, 249);
+    color: var(--fontColor);
+    /*color: rgb(247, 250, 249);*/
 }
 
 html {
@@ -24,12 +25,6 @@ html {
     color: white;
 }
 
-nav a:hover {
-    color: #fff;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-
 main {
     margin-top: 100px;
     padding-left: 30px;
@@ -40,7 +35,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    background: var(--bg);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     width: 100vw;
     height: 100vh;
@@ -75,13 +70,14 @@ section {
 }
 
 /* Menu - A partir daqui é o CSS do menu */
+
 header {
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
-    padding: 20px 100px;
     align-items: center;
     display: flex;
-    width: 100%;
+    width: 100vw;
+    z-index: 9;
     left: 0;
     top: 0;
 }
@@ -94,8 +90,26 @@ header .logo {
 header ul {
     position: relative;
     display: flex;
-    gap: 2,5rem;
+    gap: 2.5rem;
 }
+
+nav li {
+    list-style: none;
+}
+
+nav a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
 
 li {
     display: block;
@@ -108,18 +122,6 @@ ul:hover li {
 
 ul li:hover {
     filter: blur(0px);
-}
-
-header ul li {
-    list-style: none;
-}
-
-header ul li a {
-    display: inline-block;
-    color: #fff;
-    font-weight: 400;
-    margin-left: 40px;
-    text-decoration: none;
 }
 
 /* Aqui acaba o CSS menu */
@@ -449,6 +451,7 @@ form legend {
 }
 
 .texto_prod {
+    color: var(--fontColor);
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -472,8 +475,6 @@ form legend {
 }
 
 
-
-
 #flutuantes {
     flex-direction: column;
     height: fit-content;
@@ -486,7 +487,7 @@ form legend {
     bottom: 20vh;
     z-index: 9;
     width: 1vw;
-    right: 0;
+    right: -50px;
 }
 
 /*Botao para subir*/
@@ -553,4 +554,21 @@ footer div {
 footer a {
     text-decoration: none;
     height: fit-content;
+}
+
+.tema-claro{
+    --bg: linear-gradient(135deg, #BDB 0%, #080 50%, #020 100%);
+    --fontColor: #FFF;
+}
+.tema-escuro{
+    --bg: linear-gradient(135deg, #040 0%, #000 100%);
+    --fontColor: #BF4;
+}
+#tema{
+    border-style: none;
+    font-size: 26px;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
 }
