@@ -53,4 +53,9 @@ function Inicio() {
     titulo[1].getElementsByTagName('p')[0].innerText = prods[0].descricao;
     document.getElementById("img_prod").src = prods[0].img;
 }
-Prod(1)
+//Efeito de ampliação dos icones dos produtos
+var imgs=document.getElementsByClassName("prod_imgs");
+for(let i=0;i<imgs.length;i++){
+imgs[i].addEventListener("mouseover",function(){imgs[i].style.transform="scale(1.4)";});
+imgs[i].addEventListener("mouseout",function(){imgs[i].style.transform="scale(1.0)";});
+}

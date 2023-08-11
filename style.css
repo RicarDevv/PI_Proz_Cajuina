@@ -3,9 +3,19 @@
 * {
     margin: 0;
     padding: 0;
+    caret-color: #C8FF00;
+    -webkit-user-drag: none;
+    user-select: none;
+    /*Tira a possibilidade de selecionar algo, por exemplo, um texto.*/
+    -webkit-user-select: none;
+    /*Mesmo que o de cima*/
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: rgb(247, 250, 249);
+}
+html {
+    scroll-behavior: smooth;
+    width: 100vw;
 }
 
 ::selection {
