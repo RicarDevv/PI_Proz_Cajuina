@@ -13,6 +13,13 @@
     font-family: 'Poppins', sans-serif;
     color: rgb(247, 250, 249);
 }
+
+body {
+    background: #f2f2f2; /* Cor de fundo mais clara */
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Cor de texto mais escura */
+}
+
 html {
     scroll-behavior: smooth;
     width: 100vw;
@@ -521,6 +528,7 @@ footer {
     justify-content: space-around;
     width: 100%;
     height: 100%;
+    text-decoration: none;
 }
 
 footer img {
@@ -534,4 +542,14 @@ footer div {
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+#footer_link{
+
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
 }

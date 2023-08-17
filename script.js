@@ -59,3 +59,39 @@ for(let i=0;i<imgs.length;i++){
 imgs[i].addEventListener("mouseover",function(){imgs[i].style.transform="scale(1.4)";});
 imgs[i].addEventListener("mouseout",function(){imgs[i].style.transform="scale(1.0)";});
 }
+
+
+/*window.onload = function(){
+  var entidade = document.getElementById('imagem');
+
+  // Altere o número para a apliação/redução desejada
+  var fator_lupa = 6;
+
+  entidade.onmouseover = function () { this.style.width = (this.clientWidth * fator_lupa) + "px"; };
+
+  entidade.onmouseout = function () { this.style.width = (this.clientWidth / 2) + "px"; };
+}
+*/
+
+window.onload = function(){
+    var entidade = document.getElementById('imagem');
+  
+    var fator_aumento = 1.5; // Fator de aumento de tamanho
+    var tamanho_original = entidade.clientWidth; // Tamanho original da imagem
+  
+    var aumentada = false; // Variável para controlar o estado da imagem
+  
+    entidade.onclick = function () {
+      if (aumentada) {
+        // Reduz a imagem para o tamanho original
+        this.style.width = tamanho_original + "px";
+      } else {
+        // Aumenta a imagem
+        this.style.width = (tamanho_original * fator_aumento) + "px";
+      }
+      
+      // Alterna o estado
+      aumentada = !aumentada;
+    };
+  }
+  
