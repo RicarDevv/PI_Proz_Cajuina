@@ -467,9 +467,6 @@ form label, form legend {
     text-align: left;
 }
 
-
-
-
 #flutuantes {
     background: none;
     display: flex;
@@ -506,7 +503,7 @@ form label, form legend {
 
 
 
-/* Rorapé */
+/* Rodapé */
 
 #rodape {
     width: 100%;
