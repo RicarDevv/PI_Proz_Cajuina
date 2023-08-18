@@ -520,9 +520,6 @@ form label, form legend {
     text-align: left;
 }
 
-
-
-
 #flutuantes {
     background: none;
     display: flex;
@@ -559,7 +556,7 @@ form label, form legend {
 
 
 
-/* Rorapé */
+/* Rodapé */
 
 #rodape {
     width: 100%;
@@ -611,6 +608,7 @@ a {
 
 
         /* Estilos para o input de arquivo curriculo */
+ /* Estilos para o input de arquivo */
         .file-input-container {
             display: flex;
             flex-direction: column;
@@ -715,4 +713,51 @@ a {
 
     padding: 10px;
 
+}
+
+        /*   */
+        .inscrever-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Remove a sublinhado padrão de links */
+        }
+
+        .inscrever-button:hover {
+            background-color: #45a049;
+        }
+    
+
+
+/* Estilização para a seção de texto e imagens */
+
+
+/* Estilização para o botão */
+.inscrever-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+.filiasetxt {
+
+    background: url('https://www.google.com/search?q=folhas&oq=folhas+&aqs=chrome.0.69i59j46i67i433i650j0i67i650j0i67i433i650j46i433i512j0i67i650j46i433i512j0i512j0i131i433i512j0i512j46i131i433i512j0i67i650l2j0i512.2331j1j7&client=ms-android-samsung-gj-rev1&sourceid=chrome-mobile&ie=UTF-8#imgrc=gfg3g6KkzA7Z0M&imgdii=UforDKzVmpRNtM') center/cover no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }

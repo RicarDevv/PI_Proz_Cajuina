@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    caret-color: #C8FF00;
+    -webkit-user-drag: none;
+    user-select: none;
+    /*Tira a possibilidade de selecionar algo, por exemplo, um texto.*/
+    -webkit-user-select: none;
+    /*Mesmo que o de cima*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(247, 250, 249);
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+::selection {
+    background-color: #050;
+    color: white;
+}
+
+nav a:hover{
+    
+    color: #fff;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+main{
+    margin-top: 100px;
+    padding-left: 30px;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transition: 0.5s;
+}
+
+.section-nov {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transition: 0.5s;
+    display: block;
+} 
+
+.section-fil {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transition: 0.5s;
+    display: block;
+} 
+/* Menu - A partir daqui é o CSS do menu */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    gap: 2,5rem;
+}
+
+li {
+    display: block;
+    transition: .5s;
+}
+
+ul:hover li {
+    filter: blur(5px);
+}
+
+ul li:hover {
+    filter: blur(0px);
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+/* Aqui acaba o CSS menu */ 
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #0077b5; /* LinkedIn blue */
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background-color: #0e5a8a; /* Darker LinkedIn blue on hover */
+  }
+h3 {
+    color: #002400;
+}
+/* Rodapé */
+
+#rodape {
+    width: 100%;
+    height: 20vh;
+    min-height: 20vh;
+    padding: 0 2vw;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+footer img {
+    height: 80%;
+}
+
+footer div {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
