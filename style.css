@@ -11,8 +11,7 @@
     /*Mesmo que o de cima*/
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: var(--fontColor);
-    /*color: rgb(247, 250, 249);*/
+    color: rgb(247, 250, 249);
 }
 
 html {
@@ -25,6 +24,13 @@ html {
     color: white;
 }
 
+nav a:hover {
+
+    color: #fff;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
 main {
     margin-top: 100px;
     padding-left: 30px;
@@ -32,14 +38,14 @@ main {
 
 section {
     position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--bg);
+    background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    width: 100vw;
-    height: 100vh;
-    padding: 100px;
     transition: 0.5s;
 }
 
@@ -70,16 +76,15 @@ section {
 }
 
 /* Menu - A partir daqui é o CSS do menu */
-
 header {
-    justify-content: space-around;
     position: absolute;
-    align-items: center;
-    display: flex;
-    width: 100vw;
-    z-index: 9;
-    left: 0;
     top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .logo {
@@ -90,26 +95,8 @@ header .logo {
 header ul {
     position: relative;
     display: flex;
-    gap: 2.5rem;
+    gap: 2, 5rem;
 }
-
-nav li {
-    list-style: none;
-}
-
-nav a{
-    display: inline-block;
-    color: #fff;
-    font-weight: 400;
-    margin-left: 40px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-nav a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
-
 
 li {
     display: block;
@@ -124,8 +111,25 @@ ul li:hover {
     filter: blur(0px);
 }
 
-/* Aqui acaba o CSS menu */
+header ul li {
+    list-style: none;
+}
 
+header ul li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+/* Aqui acaba o CSS menu */
+/*
+img {
+    width: 200px;
+    height: 200px;
+}
+*/
 .content {
     position: relative;
     width: 100%;
@@ -400,13 +404,23 @@ form legend {
     height: 70%;
 }
 
+#todos_produtos div li img {
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
+    transition: transform 1s;
+    object-fit: contain;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+}
+
 #img_prod {
     filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
     object-fit: contain;
+    height: 80%;
+    width: 100%;
     max-width: 350px;
     min-width: 100px;
-    width: 100%;
-    height: 80%;
 }
 
 #todos_produtos div ul {
@@ -436,22 +450,7 @@ form legend {
     left: 208px;
 }
 
-.prod_imgs {
-    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -o-transition: 1s;
-    -ms-transition: 1s;
-    transition: 1s;
-    object-fit: contain;
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-}
-
 .texto_prod {
-    color: var(--fontColor);
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -474,35 +473,28 @@ form legend {
     text-align: left;
 }
 
-
 #flutuantes {
-    flex-direction: column;
-    height: fit-content;
-    align-items: center;
-    -webkit-user-select: none;
-    user-select: none;
     background: none;
-    position: fixed;
     display: flex;
-    bottom: 20vh;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: fit-content;
     z-index: 9;
     width: 1vw;
-    right: -50px;
+    bottom: 20vh;
+    right: 0;
 }
 
 /*Botao para subir*/
 #subir {
-    background-color: rgba(50, 100, 50, 0.5);
-    border: 2px solid white;
+    background-color: rgba(0, 30, 0, 0.5);
     transform: rotate(90deg);
-    text-decoration: none;
     border-radius: 20%;
-    text-align: center;
     font-size: 20px;
     cursor: pointer;
-    color: white;
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
 }
 
 /*Redes sociais*/
@@ -517,23 +509,21 @@ form legend {
 
 
 
-/* Rorapé */
+/* Rodapé */
 
 #rodape {
-    min-height: 20vh;
-    padding: 0;
-    width: 100vw;
+    width: 100%;
     height: 20vh;
+    min-height: 20vh;
+    padding: 0 2vw;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.1);
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
     display: flex;
-    height: 100%;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
+    height: 100%;
 }
 
 footer img {
@@ -541,34 +531,197 @@ footer img {
 }
 
 footer div {
-    width: 85%;
-    height: 80%;
-    display: flex;
-    padding: 10px 0;
-    align-items: center;
-    justify-content: space-around;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-footer a {
-    text-decoration: none;
-    height: fit-content;
+/* Estilos para o input de arquivo */
+.file-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
-.tema-claro{
-    --bg: linear-gradient(135deg, #BDB 0%, #080 50%, #020 100%);
-    --fontColor: #FFF;
+
+.file-input-label {
+    font-size: 16px;
+    margin-bottom: 5px;
 }
-.tema-escuro{
-    --bg: linear-gradient(135deg, #040 0%, #000 100%);
-    --fontColor: #BF4;
+
+
+.file-input {
+    display: none;
 }
-#tema{
-    border-style: none;
-    font-size: 26px;
-    background-color: transparent;
-    width: 35px;
-    height: 35px;
+
+
+.custom-file-input {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.custom-file-input:hover {
+    background-color: #45a049;
+}
+
+
+
+/*   */
+.inscrever-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    /* Remove a sublinhado padrão de links */
+}
+
+.inscrever-button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Estilização para a seção de texto e imagens */
+
+
+/* Estilização para o botão */
+.inscrever-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 10px;
+    /* Espaçamento superior */
+}
+
+.filiasetxt {
+
+    background: url('https://www.google.com/search?q=folhas&oq=folhas+&aqs=chrome.0.69i59j46i67i433i650j0i67i650j0i67i433i650j46i433i512j0i67i650j46i433i512j0i512j0i131i433i512j0i512j46i131i433i512j0i67i650l2j0i512.2331j1j7&client=ms-android-samsung-gj-rev1&sourceid=chrome-mobile&ie=UTF-8#imgrc=gfg3g6KkzA7Z0M&imgdii=UforDKzVmpRNtM') center/cover no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#mainLogin {
+    display: flex;
+    justify-content: center;
+}
+
+#usuario {
+    overflow: hidden;
+    display: flex;
+    border-radius: 2%;
+    width: 70vw;
+    height: 40vh;
+}
+
+#usuario input[type="submit"] {
+    cursor: pointer;
+    height: 48px;
+}
+
+.divs_usuario {
+    height: 80%;
+
+}
+
+#usuariologin {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 100, 0, 0.4);
+    text-align: center;
+    transition: width 1s;
+}
+
+#form_login {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    gap: 10px;
+}
+
+#form_login input {
+    border: 0;
+    width: 100%;
+    height: 28px;
+    padding: 8px;
+    outline: none;
+    background-color: #5fb75f;
+}
+
+#form_login div {
+    border: 1px solid red;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+#form_login div input {
+    border: 3px solid yellow;
+    outline: none;
+    width: 18px;
+}
+
+#usuariologin:hover {
+    width: 220%;
+}
+
+#usuariocadastro {
+    background-color: rgba(250, 250, 250, 0.8);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    transition: width 1s;
+    flex-direction: column;
+
+}
+
+#usuariocadastro:hover {
+    width: 220%;
+}
+
+#usuariocadastro h3 {
+    color: #070;
+}
+
+#form_cadastro {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    gap: 10px;
+}
+
+#form_cadastro input {
+    border: 0;
+    width: 100%;
+    height: 28px;
+    padding: 8px;
+    outline: none;
+    background-color: #5fb75f;
 }

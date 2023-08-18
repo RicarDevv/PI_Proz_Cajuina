@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
 </head>
-<body style="background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);">
+
+<body
+    style="background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);">
     <header>
-        <a href="#"><img src="./src/bannerCSJ.png" class="logo"> </a>
+        <a href="./index.html"><img src="./src/logoVetorizado1.png" class="logo"> </a>
         <div>
             <nav>
                 <ul>
@@ -17,32 +21,59 @@
                     <li><a href="login.html">Login</a></li>
                     <li><a href="filiase.html">Filie-se</a></li>
                     <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
-                </ul> 
+                </ul>
             </nav>
         </div>
-        
     </header>
-    <img src="logo.png" alt="">
-    <main>
-        <form action="">
-            <h2>Login</h2>
-            <label for="email">E-mail</label>
-            <input type="e-mail" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" class="input-padrao" required placeholder="Sua senha">
-            <input type="submit" placeholder="Entrar">
-        </form>
-    </main>
-    <footer>
-        <!-- final -->
-        <div class="linhas" id="linha-horizontal1"></div>
-        <div class="footer_infor">
-          <a href="#"><p>Trabalhe Conosco<br>Nos encontre aqui<br>Contate-nos</p></a>
-          <a href="#"><p>Lorem ipsummm<br>Lorem ipsummm</p></a>
-          <a href="#"><p>Veja nosso proprosito<br>Material que usamos</p></a>
-        </div>
-        </div>
-        <div class="linhas" id="linha-horizontal2"></div>
-    </footer>
+    <section>
+        <img src="logo.png" alt="">
+        <main id="mainLogin">
+            <div id="usuario">
+                <div id="usuariologin">
+                    <div class="divs_usuario">
+                        <h4>Fazer Login</h4>
+                        <form id="form_login">
+                            <input type="email" name="e" id="loginEmail" placeholder="Email">
+                            <input type="password" name="p" id="loginSenha" placeholder="Senha">
+                            <div>
+                                <input type="checkbox" name="l" id="loginLembrar" valur="Lembrar">
+                                <label for="loginLembrar">Lembrar</label>
+                            </div>
+                            <input type="submit" value="Entrar">
+                        </form>
+                    </div>
+                </div>
+                <div id="usuariocadastro">
+                    <div class="divs_usuario">
+                        <h4>Criar conta</h4>
+                        <form id="form_login">
+                            <input type="text" name="n" id="criarNome" placeholder="Nome">
+                            <input type="email" name="e" id="criarEmail" placeholder="Email">
+                            <input type="password" name="p" id="criarSenha" placeholder="Senha">
+                            <input type="submit" value="Criar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section id="rodape">
+        <footer>
+            <!-- final -->
+            <img src="./src/bannerCSJ.png" alt="Logo do rodapé">
+            <div>
+                <a href="#produtos">
+                    Trabalhe Conosco<br>Nos encontre aqui<br>Contate-nos
+                </a>
+                <a href="#produtos">
+                    Veja todos os nossos<br>Produtos
+                </a>
+                <a href="#cupons">
+                    Veja nosso proprosito<br>Material que usamos
+                </a>
+            </div>
+        </footer>
+    </section>
 </body>
+
 </html>
