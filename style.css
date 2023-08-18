@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    caret-color: #C8FF00;
+    /*caret-color: #C8FF00;*/
     -webkit-user-drag: none;
     user-select: none;
     /*Tira a possibilidade de selecionar algo, por exemplo, um texto.*/
@@ -13,6 +13,22 @@
     font-family: 'Poppins', sans-serif;
     color: rgb(247, 250, 249);
 }
+
+body {
+    
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+   /* background: #f2f2f2; /* Cor de fundo mais clara
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Cor de texto mais escura */
+}
+
 html {
     scroll-behavior: smooth;
     width: 100vw;
@@ -33,6 +49,21 @@ nav a:hover{
 main{
     margin-top: 100px;
     padding-left: 30px;
+
+}
+
+.form-trabalho-tittle{
+
+    display: flex;
+    justify-content: center;
+}
+
+.form_trabalho{
+
+    display: flex;
+    justify-content: center;
+    
+
 }
 
 section {
@@ -43,7 +74,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+   /* background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     transition: 0.5s;
 }
@@ -55,7 +86,7 @@ section {
     padding: 20px;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   /*background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     transition: 0.5s;
     display: block;
 } 
@@ -67,7 +98,7 @@ section {
     padding: 10px;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*  background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     transition: 0.5s;
     display: block;
 } 
@@ -125,18 +156,40 @@ img {
     height: 200px;
 }
 */
+
+
+/*Estilização do texto*/
+.styled-section {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.styled-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
 .content {
+
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .content .textBox {
     position: relative;
     max-width: 600px;
 }
+
+
 
 .content .textBox h2 {
     color: #fff;
@@ -518,6 +571,7 @@ footer {
     justify-content: space-around;
     width: 100%;
     height: 100%;
+    text-decoration: none;
 }
 
 footer img {
@@ -533,6 +587,27 @@ footer div {
     justify-content: space-around;
 }
 
+#footer_link{
+
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+
+    background: url('https://www.google.com/search?q=folhas&oq=folhas+&aqs=chrome.0.69i59j46i67i433i650j0i67i650j0i67i433i650j46i433i512j0i67i650j46i433i512j0i512j0i131i433i512j0i512j46i131i433i512j0i67i650l2j0i512.2331j1j7&client=ms-android-samsung-gj-rev1&sourceid=chrome-mobile&ie=UTF-8#imgrc=gfg3g6KkzA7Z0M&imgdii=UforDKzVmpRNtM') center/cover no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+        /* Estilos para o input de arquivo curriculo */
  /* Estilos para o input de arquivo */
         .file-input-container {
             display: flex;
@@ -541,17 +616,14 @@ footer div {
             margin-bottom: 20px;
         }
 
-
         .file-input-label {
             font-size: 16px;
             margin-bottom: 5px;
         }
 
-
         .file-input {
             display: none;
         }
-
 
         .custom-file-input {
             background-color: #4CAF50;
@@ -563,12 +635,85 @@ footer div {
             transition: background-color 0.3s ease;
         }
 
-
         .custom-file-input:hover {
             background-color: #45a049;
         }
 
 
+.more-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+.show-more,
+.show-less {
+    cursor: pointer;
+    color: #087fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.show-less {
+    display: none;
+}
+
+/*pop up*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.image-container {
+    
+    
+    display: block;
+    justify-content: center;
+    cursor: pointer;
+    
+
+
+}
+
+/* Define o tamanho máximo das imagens no meio do texto */
+.image-in-text {
+    max-width: 300px; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Faz a imagem ser exibida como um bloco */
+    margin: 20px auto; /* Define margens para centralizar a imagem */
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+.text-filiase p {
+
+    padding: 10px;
+
+}
 
         /*   */
         .inscrever-button {
