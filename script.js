@@ -95,3 +95,32 @@ window.onload = function(){
     };
   }
   
+const showMoreLink = document.querySelector('.show-more');
+        const showLessLink = document.querySelector('.show-less');
+        const moreContent = document.querySelector('.more-content');
+
+        showMoreLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            moreContent.style.display = 'block';
+            showMoreLink.style.display = 'none';
+            showLessLink.style.display = 'inline';
+        });
+
+        showLessLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            moreContent.style.display = 'none';
+            showMoreLink.style.display = 'inline';
+            showLessLink.style.display = 'none';
+        });
+
+        function openModal(imageSrc) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImg");
+            modal.style.display = "block";
+            modalImg.src = imageSrc;
+        }
+        
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
