@@ -136,7 +136,14 @@ header ul li a {
     padding: 20px;
     text-align: center;
     margin: 20px;
+    
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de escala */
+
   }
+
+  .card:hover {
+    transform: scale(1.1); /* Aumenta o card em 10% quando o cursor passa por cima */
+}
   
   .profile-picture {
     width: 150px;

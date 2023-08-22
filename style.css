@@ -369,11 +369,13 @@ img {
 }
 
 form {
+
 	margin: 20px;
     margin-bottom: 50px;
 
-
 }
+
+
 
 form label, form legend {
 	display: block;
@@ -650,7 +652,7 @@ a {
 .show-more,
 .show-less {
     cursor: pointer;
-    color: #087fff;
+    color: #84b7e9;
     text-decoration: none;
     font-weight: bold;
 }
@@ -760,4 +762,70 @@ a {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+}
+
+
+/*-----------------------------------------------Main do filiase -----------------------------*/
+
+.main-filiase{
+
+    padding: 0px;
+}
+
+.section-fil {
+
+    clear: both;
+    min-height: 316px;
+    padding: 50px 150px 150px;
+
+}
+
+/*--------------------------------*/
+
+.mostrarmais_align{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*Novidades*/
+
+
+
+.main-nov{
+
+    clear: both;
+    min-height: 316px;
+    padding: 50px 200px 50px 200px;
+
+}
+
+.main-nov p{
+
+    margin-bottom: 10px;
+
+}
+
+p {
+
+    margin-bottom: 10px;
+}
+
+.form{
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.form-nov{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+
 }
