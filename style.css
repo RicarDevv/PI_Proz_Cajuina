@@ -13,6 +13,18 @@
     font-family: 'Poppins', sans-serif;
     color: rgb(247, 250, 249);
 }
+/*body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}*/
 html {
     scroll-behavior: smooth;
     width: 100vw;
@@ -531,4 +543,190 @@ footer div {
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+/* Estilos para o input de arquivo */
+.file-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+.file-input-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+.file-input {
+    display: none;
+}
+
+
+.custom-file-input {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.custom-file-input:hover {
+    background-color: #45a049;
+}
+
+
+
+/*   */
+.inscrever-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    /* Remove a sublinhado padrão de links */
+}
+
+.inscrever-button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Estilização para a seção de texto e imagens */
+
+
+/* Estilização para o botão */
+.inscrever-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 10px;
+    /* Espaçamento superior */
+}
+
+.filiasetxt {
+
+    background: url('https://www.google.com/search?q=folhas&oq=folhas+&aqs=chrome.0.69i59j46i67i433i650j0i67i650j0i67i433i650j46i433i512j0i67i650j46i433i512j0i512j0i131i433i512j0i512j46i131i433i512j0i67i650l2j0i512.2331j1j7&client=ms-android-samsung-gj-rev1&sourceid=chrome-mobile&ie=UTF-8#imgrc=gfg3g6KkzA7Z0M&imgdii=UforDKzVmpRNtM') center/cover no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#mainLogin {
+    display: flex;
+    justify-content: center;
+}
+
+#usuario {
+    overflow: hidden;
+    display: flex;
+    border-radius: 2%;
+    width: 70vw;
+    height: 40vh;
+}
+
+#usuario input[type="submit"] {
+    cursor: pointer;
+    height: 48px;
+}
+
+.divs_usuario {
+    height: 80%;
+
+}
+
+#usuariologin {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 100, 0, 0.4);
+    text-align: center;
+    transition: width 1s;
+}
+
+#form_login {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    gap: 10px;
+}
+
+#form_login input {
+    border: 0;
+    width: 100%;
+    height: 28px;
+    padding: 8px;
+    outline: none;
+    background-color: #5fb75f;
+}
+
+#form_login div {
+    border: 1px solid red;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+#form_login div input {
+    border: 3px solid yellow;
+    outline: none;
+    width: 18px;
+}
+
+#usuariologin:hover {
+    width: 220%;
+}
+
+#usuariocadastro {
+    background-color: rgba(250, 250, 250, 0.8);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    transition: width 1s;
+    flex-direction: column;
+
+}
+
+#usuariocadastro:hover {
+    width: 220%;
+}
+
+#usuariocadastro h3 {
+    color: #070;
+}
+
+#form_cadastro {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    gap: 10px;
+}
+
+#form_cadastro input {
+    border: 0;
+    width: 100%;
+    height: 28px;
+    padding: 8px;
+    outline: none;
+    background-color: #5fb75f;
 }

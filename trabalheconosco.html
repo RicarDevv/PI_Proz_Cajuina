@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trabalhe Conosco</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <script defer src="script.js"></script>
     </head>
-    <body style="background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);">
+    <body class="pagina_trabalhe" style="background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);">
             <header>
                 <a href="#"><img src="./src/bannerCSJ.png" class="logo"> </a>
                 <div>
@@ -23,33 +24,52 @@
             </header>
         <img src="logo.png" alt="">
         <main>
-            <h1>Trabalho Conosco</h1>
-            <form>
-                <label for="nomesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome" class="input-padrao" required>
+            <h1>Trabalhe Conosco</h1>
+            <div>
+	            <form action="">
+	            	<div>
+		                <label for="nomesobrenome">Nome e sobrenome</label>
+		                <input type="text" id="nomesobrenome" name="nome e Sobrenome" class="input-padrao">
+		                <p id="username-helper" class="helper-text">Informe o nome e sobrenome corretamente</p>
+	                </div>
 
-                <label for="email">E-mail</label>
-                <input type="e-mail" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+	                <div>
+		                <label for="email">E-mail</label>
+		                <input type="e-mail" id="email" class="input-padrao" placeholder="seuemail@dominio.com">
+		                <p id="email-helper" class="helper-text">Insira um e-mail válido</p>
+	                </div>
 
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+	                <div>
+		                <label for="telefone">Telefone</label>
+		                <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+		                <p id="telefone-helper" class="helper-text">Insira um número de telefone</p>
+	                </div>
 
-                <label for="mensagem">Objetivos</label>
-                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea required>
+	                <div>
+		                <label for="mensagem">Objetivos</label>
+		                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea >
+	                </div>
 
-                <fieldset class="input-padrao">
-                    <legend >Como prefere o nosso contato?</legend>
-                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
-                    
+	                <fieldset class="input-padrao">
+	                    <legend >Como prefere o nosso contato?</legend>
+	                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+	                    
 
-                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
-                    
+	                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+	                    
 
-                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
-                </fieldset>
+	                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
 
-                <input type="submit" value="Enviar Formulário" class="enviar">
-            </form>
+                        <div class="file-input-container">
+                            <label for="curriculo" class="file-input-label">Anexe seu currículo</label>
+                            <label for="curriculo" class="custom-file-input">Selecionar Arquivo</label>
+                            <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" class="file-input" required>
+                        </div>
+	                </fieldset>
+
+	                <input type="submit" value="Enviar Formulário" class="enviar">
+	            </form>
+            </div>
         </main>
         <section id="rodape">
             <footer>
