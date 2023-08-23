@@ -59,86 +59,20 @@ for(let i=0;i<imgs.length;i++){
 imgs[i].addEventListener("mouseover",function(){imgs[i].style.transform="scale(1.4)";});
 imgs[i].addEventListener("mouseout",function(){imgs[i].style.transform="scale(1.0)";});
 }
-//Validação de formulário
-let usernameInput = document.getElementById("nomesobrenome");
-let usernameLabel = document.querySelector('label[for="nomesobrenome"]');
-let usernameHelper = document.getElementById("username-helper");
 
-//Mostrar popup - Campo Obrigatório
-usernameInput.addEventListener('focus', () => {
-    usernameLabel.classList.add('required-popup')
-})
 
-//Remover popup - Campo Obrigatório
-usernameInput.addEventListener('blur', (event) => {
-    usernameLabel.classList.remove('required-popup')
-})
+/*window.onload = function(){
+  var entidade = document.getElementById('imagem');
 
-//Validação do valor da input
-function validationInputEmail(input, inputValue ){
+  // Altere o número para a apliação/redução desejada
+  var fator_lupa = 6;
 
-    if (inputValue.includes('@') && inputValue.includes('.com')) {
-                emailHelper.classList.remove('visible')
-                input.classList.remove('error')
-                input.classList.add('correct')
-            } else {
-                input.classList.remove('correct')
-                input.classList.add('error')
-                emailHelper.classList.add('visible')
-            }
+  entidade.onmouseover = function () { this.style.width = (this.clientWidth * fator_lupa) + "px"; };
+
+  entidade.onmouseout = function () { this.style.width = (this.clientWidth / 2) + "px"; };
 }
+*/
 
-function inputValidation(input){
-    input.addEventListener('blur', (event) => {
-        const inputValue = event.target.value
-
-        if(event.target.id === 'email'){
-            validationInputEmail(input, inputValue)
-        }  else {
-
-            if(inputValue.length < 4) {
-                input.classList.remove('correct')
-                input.classList.add('error')
-                usernameHelper.classList.add('visible')
-            } else {
-                input.classList.remove('error')
-                usernameLabel.classList.remove('required-popup')
-                input.classList.add('correct')
-                usernameHelper.classList.remove('visible')
-            }
-         }   
-    })
-}
-
-
-inputValidation(usernameInput)
-
-const emailInput = document.getElementById('email')
-let emailLabel = document.querySelector('label[for="email"]');
-let emailHelper = document.getElementById("email-helper");
-
-emailInput.addEventListener('focus', () => {
-    emailLabel.classList.add('required-popups')
-})
-
-emailInput.addEventListener('blur', (event) => {
-    emailLabel.classList.remove('required-popups')
-})
-
-inputValidation(emailInput)
-
-
-const telefoneInput = document.getElementById('telefone')
-let telefoneLabel = document.querySelector('label[for="telefone"]');
-let telefoneHelper = document.getElementById("telefone-helper");
-
-telefoneInput.addEventListener('focus', () => {
-    telefoneLabel.classList.add('required-popups')
-})
-
-telefoneInput.addEventListener('blur', (event) => {
-    telefoneLabel.classList.remove('required-popups')
-})
 window.onload = function(){
     var entidade = document.getElementById('imagem');
   
