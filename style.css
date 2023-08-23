@@ -719,3 +719,59 @@ footer div {
     outline: none;
     background-color: #5fb75f;
 }
+/*---------------- Estilos dinâmicos----*/
+.required-popup::after {
+    content: "*Campo obrigatório";
+    top: 0;
+    margin-left: 220px;
+    right: 15px;
+    color: #dfdfdf;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: inline-block;
+    background-color: #202020;
+}
+.required-popups::after {
+    content: "*Campo obrigatório";
+    top: 0;
+    margin-left: 350px;
+    right: 15px;
+    color: #dfdfdf;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: inline-block;
+    background-color: #202020;
+}
+
+input.error {
+    border: solid 2px #992020;
+    background-color: #ccbbbb;
+    color: #662020;
+}
+
+input.correct {
+    background-color: #bbccbb;
+    border: solid 2px #206620;
+    color: #206620;
+}
+
+.visible {
+    display: block;
+}
+/*Validação do formulário */
+
+.error-text {
+    display: none;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #992020;
+}
+
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
