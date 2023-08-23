@@ -119,11 +119,14 @@ header ul li a {
     text-decoration: none;
 }
 /* Aqui acaba o CSS menu */ 
-
+h2 {
+    display: flex;
+    align-items: flex-start;
+}
   .card-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 20px auto;
@@ -180,6 +183,9 @@ header ul li a {
 h3 {
     color: #002400;
 }
+
+
+
 /* Rodapé */
 
 #rodape {
