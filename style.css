@@ -13,18 +13,7 @@
     font-family: 'Poppins', sans-serif;
     color: rgb(247, 250, 249);
 }
-/*body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
-    font-family: Arial, sans-serif;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}*/
+
 html {
     scroll-behavior: smooth;
     width: 100vw;
@@ -679,7 +668,7 @@ footer div {
 }
 
 #form_login div {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     justify-content: center;
     display: flex;
     gap: 10px;
