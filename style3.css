@@ -554,10 +554,27 @@ footer div {
     color: #84b7e9;
     text-decoration: none;
     font-weight: bold;
+    background-color: #f2f2f2; /* Cor de fundo */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 5px 10px; /* Espaçamento interno (padding) para melhor aparência */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+    display: inline-block; /* Para que ocupem apenas o espaço necessário */
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
+
 .show-less {
     display: none;
 }
+
+/* Estilo padrão para os links "Mostrar Mais" e "Mostrar Menos" */
+/* Estilo ao passar o mouse sobre os links "Mostrar Mais" e "Mostrar Menos" */
+.show-more:hover,
+.show-less:hover {
+    background-color: #84b7e9; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
 
 /*---pop up---*/
 
@@ -703,7 +720,7 @@ footer div {
 
 .main-nov p{
 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
 }
 

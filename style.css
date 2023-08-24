@@ -699,6 +699,8 @@ p {
 #mainLogin {
     display: flex;
     justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 15%
 }
 
 #usuario {
@@ -762,7 +764,7 @@ p {
 }
 
 #usuariocadastro {
-    background-color: rgba(250, 250, 250, 0.8);
+    background-color: rgb(237 232 40);
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -772,6 +774,7 @@ p {
     flex-direction: column;
 
 }
+
 
 #usuariocadastro:hover {
     width: 220%;
