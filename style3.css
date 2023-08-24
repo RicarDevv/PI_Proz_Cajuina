@@ -1,12 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     caret-color: #C8FF00;
     -webkit-user-drag: none;
     user-select: none;
     /*Tira a possibilidade de selecionar algo, por exemplo, um texto.*/
     -webkit-user-select: none;
     /*Mesmo que o de cima*/
+=======
+    /caret-color: #C8FF00;/
+    -webkit-user-drag: none;
+    user-select: none;
+    /Tira a possibilidade de selecionar algo, por exemplo, um texto./
+    -webkit-user-select: none;
+    /Mesmo que o de cima/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: rgb(247, 250, 249);
@@ -84,7 +93,11 @@ section {
     padding: 20px;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
    background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+=======
+   /background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); / W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
     transition: 0.5s;
     display: block;
 } 
@@ -96,7 +109,11 @@ section {
     padding: 10px;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
    /*background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+=======
+  /*  background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
     transition: 0.5s;
     display: block;
 } 
@@ -148,6 +165,7 @@ header ul li a {
     text-decoration: none;
 }
 /* Aqui acaba o CSS menu */ 
+<<<<<<< HEAD
 
 .imgBox2 {
     width: 200px;
@@ -157,6 +175,17 @@ header ul li a {
 
 
 /*Estilização do texto*/
+=======
+/*
+img {
+    width: 200px;
+    height: 200px;
+}
+*/
+
+
+/Estilização do texto/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 .styled-section {
     background-color: whitesmoke;
     border-radius: 5px;
@@ -218,7 +247,11 @@ header ul li a {
     text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 .content .imgBox2 {
+=======
+.content .imgBox {
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 
     height: 400px;
     width: 400px;
@@ -228,7 +261,11 @@ header ul li a {
     justify-content:center ;
 }
 
+<<<<<<< HEAD
 .content .imgBox2 img {
+=======
+.content .imgBox img {
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
     border-style:outset;
     border-radius: 60%;
     max-width: 600px;
@@ -293,7 +330,11 @@ header ul li a {
     margin-right: auto;
 }
 
+<<<<<<< HEAD
 /*Todos os slides*/
+=======
+/Todos os slides/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 .slides {
     top: 10%;
     width: 40%;
@@ -305,7 +346,11 @@ header ul li a {
     margin-bottom: 50px;
 }
 
+<<<<<<< HEAD
 /*Texto*/
+=======
+/Texto/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 .slider p{
     top: 90%;
     color: black;
@@ -313,14 +358,22 @@ header ul li a {
     text-align: center;
 }
 
+<<<<<<< HEAD
 /*Sliders Imagens*/
+=======
+/Sliders Imagens/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 .slides img {
     position: relative;
     width: 100%;
     top: 10%;
 }
 
+<<<<<<< HEAD
 /*Sliders individuais*/
+=======
+/Sliders individuais/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 #slide0 {
     float: left;
     border-radius: 30px;
@@ -336,7 +389,11 @@ header ul li a {
     margin-left: 30%;
 }
 
+<<<<<<< HEAD
 /*Botões para controle de sliders*/
+=======
+/Botões para controle de sliders/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 .bts_direcao {
     box-sizing: content-box;
     width: 40px;
@@ -367,8 +424,15 @@ header ul li a {
 }
 
 form {
+<<<<<<< HEAD
 	margin: 20px;
     margin-bottom: 50px;
+=======
+
+	margin: 20px;
+    margin-bottom: 50px;
+
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 }
 
 
@@ -447,7 +511,11 @@ form label, form legend {
     right: 0;
 }
 
+<<<<<<< HEAD
 /*---Botao para subir---*/
+=======
+/Botao para subir/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 #subir {
     background-color: rgba(0, 30, 0, 0.5);
     transform: rotate(90deg);
@@ -458,7 +526,11 @@ form label, form legend {
     width: 40px;
 }
 
+<<<<<<< HEAD
 /*---Redes sociais---*/
+=======
+/Redes sociais/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 #social {
     transform: scale(0.6);
     cursor: pointer;
@@ -466,9 +538,18 @@ form label, form legend {
     filter: invert(1);
 }
 
+<<<<<<< HEAD
 /* Rodapé */
 
 
+=======
+
+
+
+
+/* Rodapé */
+
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 #rodape {
     width: 100%;
     height: 20vh;
@@ -482,6 +563,7 @@ footer {
     justify-content: space-around;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
 }
 
 footer img {
@@ -497,20 +579,33 @@ footer div {
     justify-content: space-around;
 }
 /*body {
+=======
+    text-decoration: none;
+
+.body {
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 
     background: url('https://www.google.com/search?q=folhas&oq=folhas+&aqs=chrome.0.69i59j46i67i433i650j0i67i650j0i67i433i650j46i433i512j0i67i650j46i433i512j0i512j0i131i433i512j0i512j46i131i433i512j0i67i650l2j0i512.2331j1j7&client=ms-android-samsung-gj-rev1&sourceid=chrome-mobile&ie=UTF-8#imgrc=gfg3g6KkzA7Z0M&imgdii=UforDKzVmpRNtM') center/cover no-repeat;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+<<<<<<< HEAD
 }*/
 
 
+=======
+}
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 
 
         /* Estilos para o input de arquivo curriculo */
  /* Estilos para o input de arquivo */
+<<<<<<< HEAD
        .file-input-container {
+=======
+        .file-input-container {
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -559,7 +654,11 @@ footer div {
     display: none;
 }
 
+<<<<<<< HEAD
 /*---pop up---*/
+=======
+/pop up/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 
 .modal {
     display: none;
@@ -664,7 +763,11 @@ footer div {
 }
 
 
+<<<<<<< HEAD
 /*-----------------------------------------------Main do filiase -----------------------------*/
+=======
+/-----------------------------------------------Main do filiase -----------------------------/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 
 .main-filiase{
 
@@ -679,7 +782,11 @@ footer div {
 
 }
 
+<<<<<<< HEAD
 /*--------------------------------*/
+=======
+/--------------------------------/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 
 .mostrarmais_align{
 
@@ -689,7 +796,11 @@ footer div {
 
 }
 
+<<<<<<< HEAD
 /*---------------Novidades--------------*/
+=======
+/Novidades/
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
 
 
 
@@ -727,4 +838,8 @@ p {
 
     
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c5e74b6e6682464a7d2646f0304b3c1306ac2575
