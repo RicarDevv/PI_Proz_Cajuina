@@ -1,0 +1,730 @@
+* {
+    margin: 0;
+    padding: 0;
+    caret-color: #C8FF00;
+    -webkit-user-drag: none;
+    user-select: none;
+    /*Tira a possibilidade de selecionar algo, por exemplo, um texto.*/
+    -webkit-user-select: none;
+    /*Mesmo que o de cima*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(247, 250, 249);
+}
+
+body {
+    
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+   /* background: #f2f2f2; /* Cor de fundo mais clara
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Cor de texto mais escura */
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+::selection {
+    background-color: #050;
+    color: white;
+}
+
+nav a:hover{
+    
+    color: #fff;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+main{
+    margin-top: 100px;
+    padding-left: 30px;
+
+}
+
+.form-trabalho-tittle{
+
+    display: flex;
+    justify-content: center;
+}
+
+.form_trabalho{
+
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* background: linear-gradient(135deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transition: 0.5s;
+}
+
+.section-nov {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+   background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+    transition: 0.5s;
+    display: block;
+} 
+
+.section-fil {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+   /*background: linear-gradient(135deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transition: 0.5s;
+    display: block;
+} 
+/* Menu - A partir daqui é o CSS do menu */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    gap: 2,5rem;
+}
+
+li {
+    display: block;
+    transition: .5s;
+}
+
+ul:hover li {
+    filter: blur(5px);
+}
+
+ul li:hover {
+    filter: blur(0px);
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+/* Aqui acaba o CSS menu */ 
+
+.imgBox2 {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+/*Estilização do texto*/
+.styled-section {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.styled-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content {
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+
+
+.content .textBox h2 {
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .textBox h2 span {
+    font-size: 2em;
+}
+
+.content .textBox p {
+    color: #fff;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content .imgBox2 {
+
+    height: 400px;
+    width: 400px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content:center ;
+}
+
+.content .imgBox2 img {
+    border-style:outset;
+    border-radius: 60%;
+    max-width: 600px;
+    max-height: 350px;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex ;
+    justify-content:flex-end;
+    align-items:center ;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    section {
+        padding: 20px 50px;
+    }
+
+    .content {
+        padding: 100px 50px 150px;
+    }
+
+    .content .textBox {
+        padding: 1em;
+    }
+}
+
+/* Slide */
+.slider_main {
+    position: absolute;
+    left: 0;
+    top: 12vh;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.slider {
+    position: relative;
+    width: 700px;
+    height: 55vh;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Todos os slides*/
+.slides {
+    top: 10%;
+    width: 40%;
+    height: 90%;
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid #222;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+/*Texto*/
+.slider p{
+    top: 90%;
+    color: black;
+    position: relative;
+    text-align: center;
+}
+
+/*Sliders Imagens*/
+.slides img {
+    position: relative;
+    width: 100%;
+    top: 10%;
+}
+
+/*Sliders individuais*/
+#slide0 {
+    float: left;
+    border-radius: 30px;
+}
+
+#slide1 {
+    float: right;
+}
+
+#slide2 {
+    top: -90%;
+    float: left;
+    margin-left: 30%;
+}
+
+/*Botões para controle de sliders*/
+.bts_direcao {
+    box-sizing: content-box;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 100%;
+    top: 40%;
+    cursor: pointer;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bt_voltar {
+    left: 10px;
+    background-image: url(./src/bt_va.png);
+}
+
+#bt_avancar {
+    right: 10px;
+    background-image: url(./src/bt_va.png);
+    transform: scaleX(-1);
+}
+
+.form {
+    margin-top: 40px;
+}
+
+form {
+	margin: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+    color: black;
+}
+
+.contato-zap{
+    display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+    width: 50%;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: orange;
+	transform: scale(1.2);
+}
+
+
+.texto_prod:first-child {
+    align-items: end;
+}
+
+.texto_prod:first-child p {
+    text-align: right;
+}
+
+.texto_prod:last-child {
+    align-items: start;
+}
+
+.texto_prod:last-child p {
+    text-align: left;
+}
+
+#flutuantes {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: fit-content;
+    z-index: 9;
+    width: 1vw;
+    bottom: 20vh;
+    right: 0;
+}
+
+/*---Botao para subir---*/
+#subir {
+    background-color: rgba(0, 30, 0, 0.5);
+    transform: rotate(90deg);
+    border-radius: 20%;
+    font-size: 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+/*---Redes sociais---*/
+#social {
+    transform: scale(0.6);
+    cursor: pointer;
+    text-align: center;
+    filter: invert(1);
+}
+
+/* Rodapé */
+
+
+#rodape {
+    width: 100%;
+    height: 20vh;
+    min-height: 20vh;
+    padding: 0 2vw;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+footer img {
+    height: 80%;
+}
+
+footer div {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/*body {
+
+    background: url('https://www.google.com/search?q=folhas&oq=folhas+&aqs=chrome.0.69i59j46i67i433i650j0i67i650j0i67i433i650j46i433i512j0i67i650j46i433i512j0i512j0i131i433i512j0i512j46i131i433i512j0i67i650l2j0i512.2331j1j7&client=ms-android-samsung-gj-rev1&sourceid=chrome-mobile&ie=UTF-8#imgrc=gfg3g6KkzA7Z0M&imgdii=UforDKzVmpRNtM') center/cover no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}*/
+
+
+
+
+        /* Estilos para o input de arquivo curriculo */
+ /* Estilos para o input de arquivo */
+       .file-input-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .file-input-label {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .custom-file-input {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-file-input:hover {
+            background-color: #45a049;
+        }
+
+
+.more-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+.show-more,
+.show-less {
+    cursor: pointer;
+    color: #84b7e9;
+    text-decoration: none;
+    font-weight: bold;
+}
+.show-less {
+    display: none;
+}
+
+/*---pop up---*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.image-container {
+    
+    
+    display: block;
+    justify-content: center;
+    cursor: pointer;
+    
+
+
+}
+
+/* Define o tamanho máximo das imagens no meio do texto */
+.image-in-text {
+    max-width: 300px; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Faz a imagem ser exibida como um bloco */
+    margin: 20px auto; /* Define margens para centralizar a imagem */
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+.text-filiase p {
+
+    padding: 10px;
+
+}
+
+        /*   */
+        .inscrever-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Remove a sublinhado padrão de links */
+        }
+
+        .inscrever-button:hover {
+            background-color: #45a049;
+        }
+    
+
+
+/* Estilização para a seção de texto e imagens */
+
+
+/* Estilização para o botão */
+.inscrever-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+.filiasetxt {
+
+    background: url('https://www.google.com/search?q=folhas&oq=folhas+&aqs=chrome.0.69i59j46i67i433i650j0i67i650j0i67i433i650j46i433i512j0i67i650j46i433i512j0i512j0i131i433i512j0i512j46i131i433i512j0i67i650l2j0i512.2331j1j7&client=ms-android-samsung-gj-rev1&sourceid=chrome-mobile&ie=UTF-8#imgrc=gfg3g6KkzA7Z0M&imgdii=UforDKzVmpRNtM') center/cover no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/*-----------------------------------------------Main do filiase -----------------------------*/
+
+.main-filiase{
+
+    padding: 0px;
+}
+
+.section-fil {
+
+    clear: both;
+    min-height: 316px;
+    padding: 50px 150px 150px;
+
+}
+
+/*--------------------------------*/
+
+.mostrarmais_align{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*---------------Novidades--------------*/
+
+
+
+.main-nov{
+
+    clear: both;
+    min-height: 316px;
+    padding: 50px 200px 50px 200px;
+
+}
+
+.main-nov p{
+
+    margin-bottom: 10px;
+
+}
+
+p {
+
+    margin-bottom: 10px;
+}
+
+.form{
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.form-nov{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+
+}

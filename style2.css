@@ -122,6 +122,14 @@ header ul li a {
 h2 {
     display: flex;
     align-items: flex-start;
+
+}
+.ju {
+    display: flex;
+    align-items: flex-end;
+    height: 120px;
+    width: 120px;
+    
 }
   .card-container {
     display: flex;
