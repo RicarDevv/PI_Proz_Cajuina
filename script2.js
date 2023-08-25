@@ -49,3 +49,8 @@ const showMoreLink = document.querySelector('.show-more');
             var modal = document.getElementById("myModal");
             modal.style.display = "none";
         }
+
+        document.querySelector('.menu-toggle').addEventListener('click', ()=> {
+          const menu = document.querySelector('.menu');
+          menu.classList.toggle('active')
+        })
